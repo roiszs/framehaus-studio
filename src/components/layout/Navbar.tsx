@@ -24,19 +24,19 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-[#F5F1EA]/10 bg-[#0D0D0D]/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-[#F5F1EA]/10 bg-[#0D0D0D]/82 backdrop-blur-2xl">
       <Container>
-        <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="group flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-full border border-[#C8A96A]/30 bg-[#C8A96A]/10 text-[#C8A96A] transition group-hover:border-[#C8A96A]/60">
+        <div className="flex h-16 items-center justify-between gap-4 sm:h-20">
+          <Link href="/" className="group flex min-w-0 items-center gap-3">
+            <div className="flex size-10 shrink-0 items-center justify-center rounded-full border border-[#C8A96A]/30 bg-[#C8A96A]/10 text-[#C8A96A] transition group-hover:border-[#C8A96A]/60 sm:size-11">
               <Camera size={18} />
             </div>
 
-            <div className="leading-none">
-              <p className="font-editorial text-2xl font-semibold tracking-[-0.04em] text-[#F5F1EA]">
+            <div className="min-w-0 leading-none">
+              <p className="font-editorial text-2xl font-semibold tracking-[-0.04em] text-[#F5F1EA] sm:text-3xl">
                 FrameHaus
               </p>
-              <p className="mt-1 text-[10px] uppercase tracking-[0.32em] text-[#A7A29A]">
+              <p className="mt-1 text-[9px] uppercase tracking-[0.3em] text-[#A7A29A] sm:text-[10px]">
                 Studio
               </p>
             </div>
@@ -51,13 +51,16 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={cn(
-                    "text-sm font-medium transition",
+                    "relative text-sm font-medium transition",
                     active
                       ? "text-[#F5F1EA]"
                       : "text-[#A7A29A] hover:text-[#F5F1EA]"
                   )}
                 >
                   {item.label[lang]}
+                  {active ? (
+                    <span className="absolute -bottom-3 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-[#C8A96A]" />
+                  ) : null}
                 </Link>
               );
             })}
@@ -68,7 +71,7 @@ export default function Navbar() {
 
             <Button
               asChild
-              className="rounded-full bg-[#F5F1EA] px-5 text-[#0D0D0D] hover:bg-[#C8A96A]"
+              className="rounded-full bg-[#F5F1EA] px-5 text-[#0D0D0D] shadow-[0_0_35px_rgba(245,241,234,0.08)] hover:bg-[#C8A96A]"
             >
               <Link href="/contact">
                 {dict.nav.cta}
@@ -77,7 +80,7 @@ export default function Navbar() {
             </Button>
           </div>
 
-          <div className="flex items-center gap-3 lg:hidden">
+          <div className="flex shrink-0 items-center gap-2 lg:hidden">
             <LanguageToggle />
 
             <Sheet open={open} onOpenChange={setOpen}>
@@ -85,41 +88,52 @@ export default function Navbar() {
                 <button
                   type="button"
                   aria-label={dict.nav.openMenu}
-                  className="flex size-10 items-center justify-center rounded-full border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 text-[#F5F1EA]"
+                  className="flex size-10 items-center justify-center rounded-full border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 text-[#F5F1EA] transition hover:bg-[#F5F1EA]/10"
                 >
                   <Menu size={18} />
                 </button>
               </SheetTrigger>
 
-              <SheetContent className="border-[#F5F1EA]/10 bg-[#0D0D0D] text-[#F5F1EA]">
+              <SheetContent className="w-[88vw] border-[#F5F1EA]/10 bg-[#0D0D0D] p-6 text-[#F5F1EA] sm:max-w-md">
                 <SheetTitle className="sr-only">{dict.nav.openMenu}</SheetTitle>
 
-                <div className="mt-10">
-                  <div className="mb-10">
+                <div className="mt-8">
+                  <div className="mb-10 rounded-[2rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-5">
                     <p className="font-editorial text-3xl font-semibold tracking-[-0.04em]">
                       FrameHaus
                     </p>
-                    <p className="mt-2 text-sm text-[#A7A29A]">
-                      Premium Photography & Video Studio
+                    <p className="mt-2 text-sm leading-6 text-[#A7A29A]">
+                      {lang === "en"
+                        ? "Premium photography and video studio."
+                        : "Estudio premium de fotografía y video."}
                     </p>
                   </div>
 
-                  <nav className="flex flex-col gap-5">
-                    {navigation.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        onClick={() => setOpen(false)}
-                        className="text-2xl font-medium text-[#F5F1EA]"
-                      >
-                        {item.label[lang]}
-                      </Link>
-                    ))}
+                  <nav className="flex flex-col gap-2">
+                    {navigation.map((item) => {
+                      const active = pathname === item.href;
+
+                      return (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          onClick={() => setOpen(false)}
+                          className={cn(
+                            "rounded-2xl px-4 py-4 text-2xl font-medium transition",
+                            active
+                              ? "bg-[#F5F1EA] text-[#0D0D0D]"
+                              : "text-[#F5F1EA] hover:bg-[#F5F1EA]/8"
+                          )}
+                        >
+                          {item.label[lang]}
+                        </Link>
+                      );
+                    })}
                   </nav>
 
                   <Button
                     asChild
-                    className="mt-10 w-full rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#C8A96A]"
+                    className="mt-10 h-12 w-full rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#C8A96A]"
                   >
                     <Link href="/contact" onClick={() => setOpen(false)}>
                       {dict.nav.cta}

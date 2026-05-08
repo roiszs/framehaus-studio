@@ -1,25 +1,5 @@
-"use client";
-
-import Reveal from "@/components/motion/Reveal";
-import Container from "@/components/shared/Container";
-import SectionHeader from "@/components/shared/SectionHeader";
-import { useLang } from "@/lib/i18n/LanguageProvider";
+import ServicesPageExperience from "@/components/pages/ServicesPageExperience";
 
 export default function ServicesPage() {
-  const { dict } = useLang();
-  const page = dict.pages.services;
-
-  return (
-    <section className="min-h-[70vh] bg-[#0D0D0D] py-24 sm:py-32">
-      <Container>
-        <Reveal>
-          <SectionHeader
-            eyebrow={page.eyebrow}
-            title={page.title}
-            description={page.description}
-          />
-        </Reveal>
-      </Container>
-    </section>
-  );
+  return <ServicesPageExperience />;
 }

@@ -10,8 +10,9 @@ export default function PackagesPage() {
   const page = dict.pages.packages;
 
   return (
-    <section className="min-h-[70vh] bg-[#0D0D0D] py-24 sm:py-32">
-      <Container>
+    <section className="relative min-h-[72vh] overflow-hidden bg-[#0D0D0D] py-20 sm:py-28">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(200,169,106,0.14),transparent_30%),linear-gradient(135deg,#0D0D0D,#120F0D,#0D0D0D)]" />
+      <Container className="relative z-10">
         <Reveal>
           <SectionHeader
             eyebrow={page.eyebrow}

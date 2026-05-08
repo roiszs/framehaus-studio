@@ -11,17 +11,17 @@ export default function Footer() {
   const { lang, dict } = useLang();
 
   return (
-    <footer className="border-t border-[#F5F1EA]/10 bg-[#0D0D0D]">
+    <footer className="border-t border-[#F5F1EA]/10 bg-[#0A0A0A]">
       <Container>
-        <div className="grid gap-10 py-12 lg:grid-cols-[1.3fr_0.7fr] lg:py-16">
+        <div className="grid gap-10 py-12 sm:py-14 lg:grid-cols-[1.2fr_0.8fr] lg:py-16">
           <div>
             <Link href="/" className="inline-flex items-center gap-3">
-              <div className="flex size-10 items-center justify-center rounded-full border border-[#C8A96A]/30 bg-[#C8A96A]/10 text-[#C8A96A]">
+              <div className="flex size-11 items-center justify-center rounded-full border border-[#C8A96A]/30 bg-[#C8A96A]/10 text-[#C8A96A]">
                 <Camera size={18} />
               </div>
 
               <div className="leading-none">
-                <p className="font-editorial text-2xl font-semibold tracking-[-0.04em] text-[#F5F1EA]">
+                <p className="font-editorial text-3xl font-semibold tracking-[-0.04em] text-[#F5F1EA]">
                   FrameHaus
                 </p>
                 <p className="mt-1 text-[10px] uppercase tracking-[0.32em] text-[#A7A29A]">
@@ -34,17 +34,17 @@ export default function Footer() {
               {dict.footer.description}
             </p>
 
-            <p className="mt-6 text-xs uppercase tracking-[0.24em] text-[#C8A96A]">
+            <p className="mt-7 max-w-xl text-xs uppercase leading-6 tracking-[0.24em] text-[#C8A96A]">
               {dict.footer.builtBy}
             </p>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-1 lg:justify-self-end">
             {navigation.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm text-[#A7A29A] transition hover:text-[#F5F1EA]"
+                className="rounded-full border border-[#F5F1EA]/10 px-4 py-2 text-center text-sm text-[#A7A29A] transition hover:border-[#C8A96A]/30 hover:bg-[#F5F1EA]/5 hover:text-[#F5F1EA] lg:min-w-36"
               >
                 {item.label[lang]}
               </Link>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2A211A"/>
+      <stop offset="45%" stop-color="#0D0D0D"/>
+      <stop offset="100%" stop-color="#C8A96A"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="35%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#F5F1EA" stop-opacity=".22"/>
+      <stop offset="60%" stop-color="#C8A96A" stop-opacity=".08"/>
+      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect width="1200" height="1500" fill="url(#glow)"/>
+  <circle cx="610" cy="590" r="185" fill="#F5F1EA" opacity=".08"/>
+  <circle cx="610" cy="590" r="118" fill="#0D0D0D" opacity=".65" stroke="#C8A96A" stroke-opacity=".45" stroke-width="4"/>
+  <rect x="285" y="365" width="650" height="430" rx="80" fill="#0D0D0D" opacity=".48" stroke="#F5F1EA" stroke-opacity=".12"/>
+  <rect x="390" y="310" width="280" height="90" rx="45" fill="#C8A96A" opacity=".18"/>
+  <path d="M210 1120 C390 980 690 980 990 1135" fill="none" stroke="#F5F1EA" stroke-opacity=".18" stroke-width="3"/>
+  <text x="90" y="1320" fill="#F5F1EA" opacity=".82" font-family="Georgia" font-size="82" letter-spacing="-4">FrameHaus Studio</text>
+  <text x="95" y="1385" fill="#C8A96A" opacity=".78" font-family="Arial" font-size="24" letter-spacing="14">EDITORIAL PHOTO / VIDEO</text>
+</svg>

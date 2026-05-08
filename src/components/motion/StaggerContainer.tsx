@@ -1,10 +1,12 @@
 "use client";
 
-import { motion, type HTMLMotionProps } from "motion/react";
+import { motion, type HTMLMotionProps, type Variants } from "motion/react";
 
 type StaggerContainerProps = HTMLMotionProps<"div">;
 
-export const staggerItem = {
+const premiumEase: [number, number, number, number] = [0.22, 1, 0.36, 1];
+
+export const staggerItem: Variants = {
   hidden: {
     opacity: 0,
     y: 22,
@@ -14,7 +16,7 @@ export const staggerItem = {
     y: 0,
     transition: {
       duration: 0.65,
-      ease: [0.22, 1, 0.36, 1],
+      ease: premiumEase,
     },
   },
 };
