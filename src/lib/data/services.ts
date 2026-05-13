@@ -69,7 +69,7 @@ export const services: ServiceItem[] = [
     slug: "event-coverage",
     href: "/services/event-coverage",
     icon: "CalendarDays",
-    image: "/framehaus/event-coverage.svg",
+    image: "/framehaus/event-coverage.webp",
     title: {
       en: "Event Coverage",
       es: "Cobertura de eventos",
@@ -101,7 +101,7 @@ export const services: ServiceItem[] = [
     slug: "studio-portraits",
     href: "/services/studio-portraits",
     icon: "Camera",
-    image: "/framehaus/studio-portrait.svg",
+    image: "/framehaus/studio-portrait.webp",
     title: {
       en: "Studio Portraits",
       es: "Retratos de estudio",
@@ -133,7 +133,7 @@ export const services: ServiceItem[] = [
     slug: "lifestyle-sessions",
     href: "/services/lifestyle-sessions",
     icon: "Sparkles",
-    image: "/framehaus/lifestyle-session.svg",
+    image: "/framehaus/lifestyle-session.webp",
     title: {
       en: "Lifestyle Sessions",
       es: "Sesiones lifestyle",
@@ -165,7 +165,7 @@ export const services: ServiceItem[] = [
     slug: "video-social-content",
     href: "/services/video-social-content",
     icon: "Video",
-    image: "/framehaus/video-production.svg",
+    image: "/framehaus/video-production.webp",
     title: {
       en: "Video & Social Content",
       es: "Video y contenido para redes",

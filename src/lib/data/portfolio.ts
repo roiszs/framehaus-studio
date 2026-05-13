@@ -19,7 +19,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     slug: "minimal-product-campaign",
-    image: "/framehaus/portfolio-product.svg",
+    image: "/framehaus/portfolio-product.webp",
     category: {
       en: "Product",
       es: "Producto",
@@ -35,7 +35,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     slug: "private-brand-event",
-    image: "/framehaus/portfolio-event.svg",
+    image: "/framehaus/portfolio-event.webp",
     category: {
       en: "Events",
       es: "Eventos",
@@ -51,7 +51,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     slug: "studio-portrait-series",
-    image: "/framehaus/portfolio-portrait.svg",
+    image: "/framehaus/portfolio-portrait.webp",
     category: {
       en: "Portraits",
       es: "Retratos",
@@ -67,7 +67,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     slug: "warm-lifestyle-story",
-    image: "/framehaus/portfolio-lifestyle.svg",
+    image: "/framehaus/portfolio-lifestyle.webp",
     category: {
       en: "Lifestyle",
       es: "Lifestyle",
