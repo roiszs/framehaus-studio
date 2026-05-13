@@ -47,32 +47,34 @@ function VisualBlock({
   image,
   label,
   className = "",
+  position = "object-center",
 }: {
   image?: string;
   label?: string;
   className?: string;
+  position?: string;
 }) {
   return (
     <div
       className={`relative overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#181410] ${className}`}
     >
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-70"
-        style={{
-          backgroundImage: image
-            ? `linear-gradient(135deg, rgba(13,13,13,0.18), rgba(13,13,13,0.60)), url('${image}')`
-            : undefined,
-        }}
-      />
+      {image ? (
+        <img
+          src={image}
+          alt={label ?? "FrameHaus visual"}
+          className={`absolute inset-0 h-full w-full object-cover ${position}`}
+        />
+      ) : null}
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(200,169,106,0.28),transparent_28%),linear-gradient(135deg,rgba(245,241,234,0.10),rgba(200,169,106,0.04),rgba(13,13,13,0.62))]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0D0D0D]/5 via-[#0D0D0D]/18 to-[#0D0D0D]/72" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_18%,rgba(200,169,106,0.14),transparent_34%)]" />
 
-      <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full border border-[#F5F1EA]/10 bg-[#0D0D0D]/55 px-3 py-1.5 text-[10px] uppercase tracking-[0.24em] text-[#F5F1EA] backdrop-blur-xl">
+      <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full border border-[#F5F1EA]/10 bg-[#0D0D0D]/70 px-3 py-1.5 text-[10px] uppercase tracking-[0.24em] text-[#F5F1EA] backdrop-blur-xl">
         <Camera size={12} />
         {label}
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0D0D0D] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0D0D0D]/90 to-transparent" />
     </div>
   );
 }

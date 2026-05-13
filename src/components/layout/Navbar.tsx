@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowRight, Camera, Menu } from "lucide-react";
+import { ArrowRight, Menu } from "lucide-react";
 import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -13,6 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import LanguageToggle from "@/components/layout/LanguageToggle";
+import FrameHausLogo from "@/components/brand/FrameHausLogo";
 import Container from "@/components/shared/Container";
 import { navigation } from "@/lib/data/navigation";
 import { useLang } from "@/lib/i18n/LanguageProvider";
@@ -27,20 +28,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-[#F5F1EA]/10 bg-[#0D0D0D]/82 backdrop-blur-2xl">
       <Container>
         <div className="flex h-16 items-center justify-between gap-4 sm:h-20">
-          <Link href="/" className="group flex min-w-0 items-center gap-3">
-            <div className="flex size-10 shrink-0 items-center justify-center rounded-full border border-[#C8A96A]/30 bg-[#C8A96A]/10 text-[#C8A96A] transition group-hover:border-[#C8A96A]/60 sm:size-11">
-              <Camera size={18} />
-            </div>
-
-            <div className="min-w-0 leading-none">
-              <p className="font-editorial text-2xl font-semibold tracking-[-0.055em] text-[#F5F1EA] sm:text-3xl">
-                FrameHaus
-              </p>
-              <p className="mt-1 text-[9px] uppercase tracking-[0.3em] text-[#B9B2A8] sm:text-[10px]">
-                Studio
-              </p>
-            </div>
-          </Link>
+          <FrameHausLogo />
 
           <nav className="hidden items-center gap-8 lg:flex">
             {navigation.map((item) => {
