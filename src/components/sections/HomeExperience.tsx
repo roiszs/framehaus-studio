@@ -100,7 +100,7 @@ export default function HomeExperience() {
               </Reveal>
 
               <Reveal delay={0.08}>
-                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.94] tracking-[-0.055em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-7xl">
+                <h1 className="max-w-5xl font-editorial framehaus-mobile-safe-title text-4xl font-semibold leading-[1] tracking-[-0.048em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-7xl">
                   {dict.home.title}
                 </h1>
               </Reveal>
@@ -166,7 +166,7 @@ export default function HomeExperience() {
                     />
                     <VisualBlock
                       label="Studio"
-                      image="/framehaus/hero-card.svg"
+                      image="/framehaus/hero-card.webp"
                       className="h-96"
                     />
                   </div>
@@ -361,9 +361,9 @@ export default function HomeExperience() {
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
             <Reveal>
               <VisualBlock
-                image="/framehaus/content-day.svg"
+                image="/framehaus/content-day.webp"
                 label={lang === "en" ? "Featured Package" : "Paquete destacado"}
-                className="min-h-[360px] sm:min-h-[520px]"
+                className="min-h-[360px] sm:min-h-[360px] sm:min-h-[520px]"
               />
             </Reveal>
 

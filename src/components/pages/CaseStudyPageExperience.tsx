@@ -129,7 +129,7 @@ export default function CaseStudyPageExperience() {
                   {lang === "en" ? "FronteraCode Case Study" : "Caso de estudio FronteraCode"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
+                <h1 className="max-w-5xl font-editorial framehaus-mobile-safe-title text-4xl font-semibold leading-[1] tracking-[-0.048em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "FrameHaus Studio — a premium bilingual website for a photography and video studio."
                     : "FrameHaus Studio — un website premium bilingüe para un estudio de fotografía y video."}
@@ -167,12 +167,12 @@ export default function CaseStudyPageExperience() {
 
             <Reveal delay={0.12}>
               <div className="relative overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-5 shadow-[0_24px_90px_rgba(0,0,0,0.28)]">
-                <div className="relative min-h-[520px] overflow-hidden rounded-[1.5rem] bg-[#181410]">
+                <div className="relative min-h-[360px] sm:min-h-[520px] overflow-hidden rounded-[1.5rem] bg-[#181410]">
                   <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{
                       backgroundImage:
-                        "linear-gradient(180deg,rgba(13,13,13,0.06),rgba(13,13,13,0.74)), url('/framehaus/hero-card.svg')",
+                        "linear-gradient(180deg,rgba(13,13,13,0.06),rgba(13,13,13,0.74)), url('/framehaus/hero-card.webp')",
                     }}
                   />
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(200,169,106,0.24),transparent_35%)]" />

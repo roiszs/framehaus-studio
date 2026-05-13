@@ -8,13 +8,13 @@ import {
   useSyncExternalStore,
   type ReactNode,
 } from "react";
-import { dictionary, type Language } from "@/lib/i18n/dictionary";
+import { dictionary, type Dictionary, type Language } from "@/lib/i18n/dictionary";
 
 type LanguageContextValue = {
   lang: Language;
   setLang: (lang: Language) => void;
   toggleLang: () => void;
-  dict: (typeof dictionary)[Language];
+  dict: Dictionary;
 };
 
 const STORAGE_KEY = "framehaus-lang";

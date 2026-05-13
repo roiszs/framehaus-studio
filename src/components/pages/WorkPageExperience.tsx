@@ -29,7 +29,7 @@ export default function WorkPageExperience() {
                   {lang === "en" ? "Portfolio" : "Portafolio"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
+                <h1 className="max-w-5xl font-editorial framehaus-mobile-safe-title text-4xl font-semibold leading-[1] tracking-[-0.048em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "A visual archive built to feel editorial, commercial, and real."
                     : "Un archivo visual construido para sentirse editorial, comercial y real."}
@@ -120,7 +120,7 @@ export default function WorkPageExperience() {
               <motion.article
                 key={item.slug}
                 variants={staggerItem}
-                className={`group relative min-h-[420px] overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#181410] ${
+                className={`group relative min-h-[360px] sm:min-h-[420px] overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#181410] ${
                   index === 0 || index === 3
                     ? "lg:col-span-4"
                     : "lg:col-span-2"
@@ -167,7 +167,7 @@ export default function WorkPageExperience() {
         <Container>
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <Reveal>
-              <div className="relative min-h-[480px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
+              <div className="relative min-h-[340px] sm:min-h-[480px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_28%_20%,rgba(200,169,106,0.26),transparent_34%),linear-gradient(135deg,#1A1410,#0D0D0D)]" />
 
                 <div className="absolute inset-0 opacity-80">

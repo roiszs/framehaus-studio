@@ -10,6 +10,17 @@ import { useLang } from "@/lib/i18n/LanguageProvider";
 export default function Footer() {
   const { lang, dict } = useLang();
 
+  const footerLinks = [
+    ...navigation,
+    {
+      href: "/case-study",
+      label: {
+        en: "Case Study",
+        es: "Caso de estudio",
+      },
+    },
+  ];
+
   return (
     <footer className="border-t border-[#F5F1EA]/10 bg-[#0A0A0A]">
       <Container>
@@ -40,7 +51,7 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-1 lg:justify-self-end">
-            {navigation.map((item) => (
+            {footerLinks.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

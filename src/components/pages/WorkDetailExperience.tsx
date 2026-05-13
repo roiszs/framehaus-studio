@@ -74,7 +74,7 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
                   {project.category[lang]}
                 </p>
 
-                <h1 className="font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
+                <h1 className="font-editorial framehaus-mobile-safe-title text-4xl font-semibold leading-[1] tracking-[-0.048em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {project.title[lang]}
                 </h1>
 
@@ -109,7 +109,7 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
             </Reveal>
 
             <Reveal delay={0.12}>
-              <div className="relative min-h-[500px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
+              <div className="relative min-h-[360px] sm:min-h-[500px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{

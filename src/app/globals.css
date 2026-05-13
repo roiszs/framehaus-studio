@@ -220,3 +220,32 @@ body {
 .framehaus-gold-border {
   border-color: rgba(200, 169, 106, 0.28);
 }
+
+/* FRAMEHAUS RESPONSIVE QA */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 640px) {
+  .framehaus-mobile-safe-title {
+    letter-spacing: -0.045em;
+    line-height: 1;
+  }
+}

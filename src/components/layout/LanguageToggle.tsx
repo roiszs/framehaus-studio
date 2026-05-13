@@ -12,10 +12,10 @@ export default function LanguageToggle() {
         type="button"
         onClick={() => setLang("en")}
         className={cn(
-          "rounded-full px-2.5 py-1 text-[11px] font-medium transition sm:px-3 sm:text-xs",
+          "rounded-full px-2 py-1 text-[10px] font-semibold transition sm:px-3 sm:text-xs",
           lang === "en"
             ? "bg-[#F5F1EA] text-[#0D0D0D]"
-            : "text-[#A7A29A] hover:text-[#F5F1EA]"
+            : "text-[#B9B2A8] hover:text-[#F5F1EA]"
         )}
       >
         EN
@@ -25,10 +25,10 @@ export default function LanguageToggle() {
         type="button"
         onClick={() => setLang("es")}
         className={cn(
-          "rounded-full px-2.5 py-1 text-[11px] font-medium transition sm:px-3 sm:text-xs",
+          "rounded-full px-2 py-1 text-[10px] font-semibold transition sm:px-3 sm:text-xs",
           lang === "es"
             ? "bg-[#F5F1EA] text-[#0D0D0D]"
-            : "text-[#A7A29A] hover:text-[#F5F1EA]"
+            : "text-[#B9B2A8] hover:text-[#F5F1EA]"
         )}
       >
         ES

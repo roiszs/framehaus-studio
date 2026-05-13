@@ -77,7 +77,7 @@ export default function ServiceDetailExperience({
                   {lang === "en" ? "Service Detail" : "Detalle de servicio"}
                 </p>
 
-                <h1 className="font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
+                <h1 className="font-editorial framehaus-mobile-safe-title text-4xl font-semibold leading-[1] tracking-[-0.048em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {service.title[lang]}
                 </h1>
 
@@ -112,7 +112,7 @@ export default function ServiceDetailExperience({
             </Reveal>
 
             <Reveal delay={0.12}>
-              <div className="relative min-h-[460px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
+              <div className="relative min-h-[340px] sm:min-h-[460px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{

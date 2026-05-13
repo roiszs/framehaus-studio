@@ -57,7 +57,7 @@ export default function ContactPageExperience() {
                   {lang === "en" ? "Request a Session" : "Solicitar sesión"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
+                <h1 className="max-w-5xl font-editorial framehaus-mobile-safe-title text-4xl font-semibold leading-[1] tracking-[-0.048em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "Tell us what you want to create."
                     : "Cuéntanos qué quieres crear."}
@@ -103,12 +103,12 @@ export default function ContactPageExperience() {
             </Reveal>
 
             <Reveal delay={0.12}>
-              <div className="relative min-h-[500px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
+              <div className="relative min-h-[360px] sm:min-h-[500px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.76)), url('/framehaus/content-day.svg')",
+                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.76)), url('/framehaus/content-day.webp')",
                   }}
                 />
 
@@ -142,7 +142,7 @@ export default function ContactPageExperience() {
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <Reveal>
-              <div className="rounded-[2rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-5 sm:p-8">
+              <div className="rounded-[2rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-4 shadow-[0_20px_70px_rgba(0,0,0,0.16)] sm:p-8">
                 {submitted ? (
                   <div className="flex min-h-[640px] flex-col justify-center rounded-[1.5rem] border border-[#C8A96A]/30 bg-[#C8A96A]/10 p-8 text-center">
                     <div className="mx-auto mb-6 flex size-16 items-center justify-center rounded-full bg-[#C8A96A] text-[#0D0D0D]">
@@ -170,7 +170,7 @@ export default function ContactPageExperience() {
                     </Button>
                   </div>
                 ) : (
-                  <form onSubmit={handleSubmit} className="grid gap-6">
+                  <form onSubmit={handleSubmit} className="grid gap-5 sm:gap-6">
                     <div>
                       <p className="text-xs font-medium uppercase tracking-[0.35em] text-[#C8A96A]">
                         {lang === "en" ? "Session Details" : "Detalles de la sesión"}

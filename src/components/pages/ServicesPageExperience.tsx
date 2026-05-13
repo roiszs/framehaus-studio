@@ -72,7 +72,7 @@ export default function ServicesPageExperience() {
                   {lang === "en" ? "Services" : "Servicios"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
+                <h1 className="max-w-5xl font-editorial framehaus-mobile-safe-title text-4xl font-semibold leading-[1] tracking-[-0.048em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "Photography and video services built around visual strategy."
                     : "Servicios de fotografía y video construidos alrededor de estrategia visual."}
@@ -205,12 +205,12 @@ export default function ServicesPageExperience() {
         <Container>
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <Reveal>
-              <div className="relative min-h-[480px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
+              <div className="relative min-h-[340px] sm:min-h-[480px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.74)), url('/framehaus/content-day.svg')",
+                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.74)), url('/framehaus/content-day.webp')",
                   }}
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(200,169,106,0.26),transparent_35%)]" />

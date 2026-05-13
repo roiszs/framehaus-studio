@@ -3,7 +3,7 @@ import type { PortfolioItem } from "@/types";
 export const portfolioItems: PortfolioItem[] = [
   {
     slug: "modern-founder-brand-session",
-    image: "/framehaus/portfolio-branding.svg",
+    image: "/framehaus/portfolio-branding.webp",
     category: {
       en: "Branding",
       es: "Marca personal",

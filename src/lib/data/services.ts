@@ -5,7 +5,7 @@ export const services: ServiceItem[] = [
     slug: "brand-photography",
     href: "/services/brand-photography",
     icon: "BadgeCheck",
-    image: "/framehaus/brand-session.svg",
+    image: "/framehaus/brand-session.webp",
     title: {
       en: "Brand Photography",
       es: "Fotografía de marca",
@@ -37,7 +37,7 @@ export const services: ServiceItem[] = [
     slug: "product-photography",
     href: "/services/product-photography",
     icon: "Package",
-    image: "/framehaus/product-photography.svg",
+    image: "/framehaus/product-photography.webp",
     title: {
       en: "Product Photography",
       es: "Fotografía de producto",

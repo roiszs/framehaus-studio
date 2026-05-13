@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: [
       {
-        url: "/framehaus/hero-card.svg",
+        url: "/framehaus/hero-card.webp",
         width: 1200,
         height: 1500,
         alt: "FrameHaus Studio premium photography and video website",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FrameHaus Studio | Premium Photography & Video",
     description: siteConfig.description,
-    images: ["/framehaus/hero-card.svg"],
+    images: ["/framehaus/hero-card.webp"],
   },
   icons: {
     icon: "/favicon.ico",

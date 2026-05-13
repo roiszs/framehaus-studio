@@ -46,7 +46,7 @@ export default function PackagesPageExperience() {
                   {lang === "en" ? "Packages" : "Paquetes"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
+                <h1 className="max-w-5xl font-editorial framehaus-mobile-safe-title text-4xl font-semibold leading-[1] tracking-[-0.048em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "Clear session packages for brands, people, and businesses."
                     : "Paquetes claros para marcas, personas y negocios."}
@@ -149,7 +149,7 @@ export default function PackagesPageExperience() {
               <motion.article
                 key={item.slug}
                 variants={staggerItem}
-                className={`relative flex min-h-[620px] flex-col rounded-[1.75rem] border p-6 ${
+                className={`relative flex min-h-0 flex-col rounded-[1.75rem] border p-5 sm:p-6 lg:min-h-[620px] ${
                   item.featured
                     ? "border-[#C8A96A]/45 bg-[#C8A96A]/10 shadow-[0_0_60px_rgba(200,169,106,0.08)]"
                     : "border-[#F5F1EA]/10 bg-[#F5F1EA]/5"
@@ -217,12 +217,12 @@ export default function PackagesPageExperience() {
         <Container>
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <Reveal>
-              <div className="relative min-h-[520px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
+              <div className="relative min-h-[360px] sm:min-h-[520px] overflow-hidden rounded-[2rem] border border-[#F5F1EA]/10 bg-[#181410]">
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.76)), url('/framehaus/content-day.svg')",
+                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.76)), url('/framehaus/content-day.webp')",
                   }}
                 />
 
