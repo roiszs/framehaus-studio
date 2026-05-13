@@ -268,3 +268,29 @@ button[class~="bg-[#F5F1EA]"]:active {
   color: #0d0d0d !important;
   border-color: #c8a96a !important;
 }
+
+/* FRAMEHAUS WHITE BUTTON LOCK */
+.framehaus-white-button,
+.framehaus-white-button:hover,
+.framehaus-white-button:focus,
+.framehaus-white-button:focus-visible,
+.framehaus-white-button:active,
+.framehaus-white-button[data-state="open"] {
+  background-color: #f5f1ea !important;
+  color: #0d0d0d !important;
+  border-color: #f5f1ea !important;
+  opacity: 1 !important;
+}
+
+.framehaus-white-button svg,
+.framehaus-white-button:hover svg,
+.framehaus-white-button:focus svg,
+.framehaus-white-button:active svg {
+  color: #0d0d0d !important;
+  stroke: #0d0d0d !important;
+}
+
+.framehaus-white-button:hover {
+  box-shadow: 0 18px 50px rgba(245, 241, 234, 0.14) !important;
+  transform: translateY(-1px);
+}

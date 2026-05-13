@@ -43,7 +43,7 @@ export default function ServiceDetailExperience({
 
           <Button
             asChild
-            className="mt-10 rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#C8A96A]"
+            className="framehaus-white-button mt-10 rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#F5F1EA]"
           >
             <Link href="/services">
               <ArrowLeft size={16} />
@@ -88,7 +88,7 @@ export default function ServiceDetailExperience({
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Button
                     asChild
-                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
+                    className="framehaus-white-button h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#F5F1EA]"
                   >
                     <Link href="/contact">
                       {lang === "en"
@@ -259,7 +259,7 @@ export default function ServiceDetailExperience({
               <div className="mt-10 flex justify-center">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
+                  className="framehaus-white-button h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#F5F1EA]"
                 >
                   <Link href="/contact">
                     {lang === "en" ? "Request a Session" : "Solicitar sesión"}

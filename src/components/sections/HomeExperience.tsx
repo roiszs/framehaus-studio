@@ -115,7 +115,7 @@ export default function HomeExperience() {
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Button
                     asChild
-                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
+                    className="framehaus-white-button h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#F5F1EA]"
                   >
                     <Link href="/work">
                       {dict.home.primaryCta}
@@ -403,7 +403,7 @@ export default function HomeExperience() {
 
                 <Button
                   asChild
-                  className="mt-10 h-12 w-full rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#C8A96A] sm:w-fit"
+                  className="framehaus-white-button mt-10 h-12 w-full rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#F5F1EA] sm:w-fit"
                 >
                   <Link href="/contact">
                     {lang === "en" ? "Request this package" : "Solicitar este paquete"}
@@ -611,7 +611,7 @@ export default function HomeExperience() {
               <div className="mt-10 flex justify-center">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
+                  className="framehaus-white-button h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#F5F1EA]"
                 >
                   <Link href="/contact">
                     {dict.nav.cta}

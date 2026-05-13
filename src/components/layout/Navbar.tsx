@@ -71,7 +71,7 @@ export default function Navbar() {
 
             <Button
               asChild
-              className="rounded-full bg-[#F5F1EA] px-5 text-[#0D0D0D] shadow-[0_0_35px_rgba(245,241,234,0.08)] hover:bg-[#C8A96A]"
+              className="framehaus-white-button rounded-full bg-[#F5F1EA] px-5 text-[#0D0D0D] shadow-[0_0_35px_rgba(245,241,234,0.08)] hover:bg-[#F5F1EA]"
             >
               <Link href="/contact">
                 {dict.nav.cta}
@@ -133,7 +133,7 @@ export default function Navbar() {
 
                   <Button
                     asChild
-                    className="mt-10 h-12 w-full rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#C8A96A]"
+                    className="framehaus-white-button mt-10 h-12 w-full rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#F5F1EA]"
                   >
                     <Link href="/contact" onClick={() => setOpen(false)}>
                       {dict.nav.cta}

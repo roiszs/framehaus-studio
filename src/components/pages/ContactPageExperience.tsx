@@ -164,7 +164,7 @@ export default function ContactPageExperience() {
                     <Button
                       type="button"
                       onClick={() => setSubmitted(false)}
-                      className="mx-auto mt-8 rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#C8A96A]"
+                      className="framehaus-white-button mx-auto mt-8 rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#F5F1EA]"
                     >
                       {lang === "en" ? "Send another request" : "Enviar otra solicitud"}
                     </Button>
@@ -396,7 +396,7 @@ export default function ContactPageExperience() {
 
                     <Button
                       type="submit"
-                      className="h-12 rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#C8A96A]"
+                      className="framehaus-white-button h-12 rounded-full bg-[#F5F1EA] text-[#0D0D0D] hover:bg-[#F5F1EA]"
                     >
                       {lang === "en" ? "Submit request" : "Enviar solicitud"}
                       <Send size={16} />
@@ -530,7 +530,7 @@ export default function ContactPageExperience() {
               <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
+                  className="framehaus-white-button h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#F5F1EA]"
                 >
                   <Link href="/services">
                     {lang === "en" ? "View services" : "Ver servicios"}
