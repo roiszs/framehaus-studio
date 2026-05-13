@@ -21,16 +21,16 @@ export default function Footer() {
               </div>
 
               <div className="leading-none">
-                <p className="font-editorial text-3xl font-semibold tracking-[-0.04em] text-[#F5F1EA]">
+                <p className="font-editorial text-3xl font-semibold tracking-[-0.055em] text-[#F5F1EA]">
                   FrameHaus
                 </p>
-                <p className="mt-1 text-[10px] uppercase tracking-[0.32em] text-[#A7A29A]">
+                <p className="mt-1 text-[10px] uppercase tracking-[0.32em] text-[#B9B2A8]">
                   Studio
                 </p>
               </div>
             </Link>
 
-            <p className="mt-6 max-w-xl text-sm leading-7 text-[#A7A29A]">
+            <p className="mt-6 max-w-xl text-sm leading-7 text-[#B9B2A8]">
               {dict.footer.description}
             </p>
 
@@ -44,7 +44,7 @@ export default function Footer() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-full border border-[#F5F1EA]/10 px-4 py-2 text-center text-sm text-[#A7A29A] transition hover:border-[#C8A96A]/30 hover:bg-[#F5F1EA]/5 hover:text-[#F5F1EA] lg:min-w-36"
+                className="rounded-full border border-[#F5F1EA]/10 px-4 py-2 text-center text-sm text-[#B9B2A8] transition hover:border-[#C8A96A]/30 hover:bg-[#F5F1EA]/5 hover:text-[#F5F1EA] lg:min-w-36"
               >
                 {item.label[lang]}
               </Link>
@@ -52,7 +52,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 border-t border-[#F5F1EA]/10 py-6 text-xs text-[#A7A29A] sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-3 border-t border-[#F5F1EA]/10 py-6 text-xs text-[#B9B2A8] sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} FrameHaus Studio.</p>
           <p>{dict.footer.bottom}</p>
         </div>

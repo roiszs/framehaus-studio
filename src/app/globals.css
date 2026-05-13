@@ -165,3 +165,58 @@ body {
     radial-gradient(circle at top left, rgba(200, 169, 106, 0.12), transparent 32rem),
     radial-gradient(circle at bottom right, rgba(245, 241, 234, 0.08), transparent 28rem);
 }
+
+/* FRAMEHAUS TYPOGRAPHY REFINEMENT */
+.font-editorial {
+  font-family: var(--font-display), var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.framehaus-display {
+  font-family: var(--font-display), var(--font-geist-sans), system-ui, sans-serif;
+  letter-spacing: -0.055em;
+}
+
+.framehaus-copy {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* FRAMEHAUS GLOBAL FONT FIX */
+body {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.font-editorial {
+  font-family: var(--font-display), var(--font-geist-sans), system-ui, sans-serif;
+}
+
+.framehaus-hero-title {
+  font-family: var(--font-display), var(--font-geist-sans), system-ui, sans-serif;
+  font-weight: 650;
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+}
+
+.framehaus-section-title {
+  font-family: var(--font-display), var(--font-geist-sans), system-ui, sans-serif;
+  font-weight: 650;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+/* FRAMEHAUS PREMIUM BACKGROUND REFINEMENT */
+.framehaus-soft-grid {
+  background-image:
+    linear-gradient(rgba(245, 241, 234, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245, 241, 234, 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+}
+
+.framehaus-premium-shadow {
+  box-shadow:
+    0 24px 90px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(245, 241, 234, 0.04);
+}
+
+.framehaus-gold-border {
+  border-color: rgba(200, 169, 106, 0.28);
+}

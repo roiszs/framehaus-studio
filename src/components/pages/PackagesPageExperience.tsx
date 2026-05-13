@@ -35,7 +35,7 @@ export default function PackagesPageExperience() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-20 sm:py-28 lg:py-32">
+      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(200,169,106,0.18),transparent_32%),radial-gradient(circle_at_82%_10%,rgba(245,241,234,0.08),transparent_30%),linear-gradient(135deg,#0D0D0D,#120F0D,#0D0D0D)]" />
 
         <Container className="relative z-10">
@@ -46,13 +46,13 @@ export default function PackagesPageExperience() {
                   {lang === "en" ? "Packages" : "Paquetes"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-5xl font-semibold leading-[0.88] tracking-[-0.06em] text-[#F5F1EA] sm:text-6xl md:text-7xl lg:text-8xl">
+                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "Clear session packages for brands, people, and businesses."
                     : "Paquetes claros para marcas, personas y negocios."}
                 </h1>
 
-                <p className="mt-8 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+                <p className="mt-8 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                   {lang === "en"
                     ? "FrameHaus packages are structured to make the buying decision easier: clear scope, clear deliverables, and a guided path toward booking."
                     : "Los paquetes de FrameHaus están estructurados para facilitar la decisión de compra: alcance claro, entregables claros y un camino guiado hacia la reserva."}
@@ -61,7 +61,7 @@ export default function PackagesPageExperience() {
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Button
                     asChild
-                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                   >
                     <Link href="/contact">
                       {lang === "en" ? "Request a Session" : "Solicitar sesión"}
@@ -99,7 +99,7 @@ export default function PackagesPageExperience() {
                     {featuredPackage?.name[lang]}
                   </h2>
 
-                  <p className="mt-6 text-base leading-8 text-[#A7A29A]">
+                  <p className="mt-6 text-base leading-8 text-[#B9B2A8]">
                     {featuredPackage?.description[lang]}
                   </p>
 
@@ -170,7 +170,7 @@ export default function PackagesPageExperience() {
                   {item.name[lang]}
                 </h2>
 
-                <p className="mt-5 text-sm leading-7 text-[#A7A29A]">
+                <p className="mt-5 text-sm leading-7 text-[#B9B2A8]">
                   {item.description[lang]}
                 </p>
 
@@ -222,7 +222,7 @@ export default function PackagesPageExperience() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.9)), url('/framehaus/content-day.svg')",
+                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.76)), url('/framehaus/content-day.svg')",
                   }}
                 />
 
@@ -319,7 +319,7 @@ export default function PackagesPageExperience() {
           <div className="mt-14 grid gap-4">
             {processSteps.map((step) => (
               <Reveal key={step.step}>
-                <div className="grid gap-5 rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 md:grid-cols-[0.2fr_0.8fr_1.4fr] md:items-center">
+                <div className="grid gap-5 rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 shadow-[0_20px_70px_rgba(0,0,0,0.16)] md:grid-cols-[0.2fr_0.8fr_1.4fr] md:items-center">
                   <p className="font-editorial text-5xl font-semibold text-[#C8A96A]">
                     {step.step}
                   </p>
@@ -328,7 +328,7 @@ export default function PackagesPageExperience() {
                     {step.title[lang]}
                   </h3>
 
-                  <p className="text-sm leading-7 text-[#A7A29A]">
+                  <p className="text-sm leading-7 text-[#B9B2A8]">
                     {step.description[lang]}
                   </p>
                 </div>
@@ -370,7 +370,7 @@ export default function PackagesPageExperience() {
                       <AccordionTrigger className="text-left text-base text-[#F5F1EA] hover:text-[#C8A96A] hover:no-underline">
                         {item.question[lang]}
                       </AccordionTrigger>
-                      <AccordionContent className="text-sm leading-7 text-[#A7A29A]">
+                      <AccordionContent className="text-sm leading-7 text-[#B9B2A8]">
                         {item.answer[lang]}
                       </AccordionContent>
                     </AccordionItem>
@@ -393,13 +393,13 @@ export default function PackagesPageExperience() {
                 {lang === "en" ? "Choose your package" : "Elige tu paquete"}
               </p>
 
-              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-6xl lg:text-7xl">
+              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-5xl lg:text-6xl">
                 {lang === "en"
                   ? "Ready to plan your next visual session?"
                   : "¿Listo para planear tu próxima sesión visual?"}
               </h2>
 
-              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                 {lang === "en"
                   ? "Send the project details and FrameHaus will recommend the best package or build a custom quote."
                   : "Envía los detalles del proyecto y FrameHaus recomendará el mejor paquete o preparará una cotización personalizada."}
@@ -408,7 +408,7 @@ export default function PackagesPageExperience() {
               <div className="mt-10 flex justify-center">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                 >
                   <Link href="/contact">
                     {lang === "en" ? "Request a Session" : "Solicitar sesión"}

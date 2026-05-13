@@ -55,13 +55,13 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-20 sm:py-28 lg:py-32">
+      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(200,169,106,0.18),transparent_32%),linear-gradient(135deg,#0D0D0D,#120F0D,#0D0D0D)]" />
 
         <Container className="relative z-10">
           <Link
             href="/work"
-            className="mb-10 inline-flex items-center gap-2 text-sm text-[#A7A29A] transition hover:text-[#F5F1EA]"
+            className="mb-10 inline-flex items-center gap-2 text-sm text-[#B9B2A8] transition hover:text-[#F5F1EA]"
           >
             <ArrowLeft size={16} />
             {lang === "en" ? "Back to portfolio" : "Volver al portafolio"}
@@ -74,18 +74,18 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
                   {project.category[lang]}
                 </p>
 
-                <h1 className="font-editorial text-5xl font-semibold leading-[0.88] tracking-[-0.06em] text-[#F5F1EA] sm:text-6xl md:text-7xl lg:text-8xl">
+                <h1 className="font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {project.title[lang]}
                 </h1>
 
-                <p className="mt-8 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+                <p className="mt-8 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                   {project.description[lang]}
                 </p>
 
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Button
                     asChild
-                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                   >
                     <Link href="/contact">
                       {lang === "en"
@@ -113,7 +113,7 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
                 <div
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
-                    backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.06),rgba(13,13,13,0.88)), url('${project.image}')`,
+                    backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.06),rgba(13,13,13,0.74)), url('${project.image}')`,
                   }}
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(200,169,106,0.22),transparent_34%)]" />
@@ -250,12 +250,12 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
               },
             ].map((item) => (
               <Reveal key={item.title.en}>
-                <div className="min-h-64 rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6">
+                <div className="min-h-64 rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 shadow-[0_20px_70px_rgba(0,0,0,0.16)]">
                   <Sparkles className="mb-6 text-[#C8A96A]" size={24} />
                   <h3 className="font-editorial text-3xl font-semibold tracking-[-0.04em] text-[#F5F1EA]">
                     {item.title[lang]}
                   </h3>
-                  <p className="mt-4 text-sm leading-7 text-[#A7A29A]">
+                  <p className="mt-4 text-sm leading-7 text-[#B9B2A8]">
                     {item.text[lang]}
                   </p>
                 </div>
@@ -288,12 +288,12 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
               <Reveal key={item.slug}>
                 <Link
                   href={`/work/${item.slug}`}
-                  className="group block overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 transition hover:-translate-y-1 hover:border-[#C8A96A]/35"
+                  className="group block overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 shadow-[0_20px_70px_rgba(0,0,0,0.16)] transition duration-300 hover:-translate-y-1.5 hover:border-[#C8A96A]/40"
                 >
                   <div
                     className="h-64 bg-cover bg-center transition duration-700 group-hover:scale-105"
                     style={{
-                      backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.15),rgba(13,13,13,0.86)), url('${item.image}')`,
+                      backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.15),rgba(13,13,13,0.60)), url('${item.image}')`,
                     }}
                   />
 
@@ -304,7 +304,7 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
                     <h3 className="mt-4 font-editorial text-3xl font-semibold tracking-[-0.04em] text-[#F5F1EA]">
                       {item.title[lang]}
                     </h3>
-                    <p className="mt-4 text-sm leading-7 text-[#A7A29A]">
+                    <p className="mt-4 text-sm leading-7 text-[#B9B2A8]">
                       {item.description[lang]}
                     </p>
                   </div>
@@ -324,7 +324,7 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
                 {lang === "en" ? "Create something similar" : "Crear algo similar"}
               </p>
 
-              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-6xl lg:text-7xl">
+              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-5xl lg:text-6xl">
                 {lang === "en"
                   ? "Your next project can have this level of visual direction."
                   : "Tu próximo proyecto puede tener este nivel de dirección visual."}
@@ -333,7 +333,7 @@ export default function WorkDetailExperience({ slug }: WorkDetailExperienceProps
               <div className="mt-10 flex justify-center">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                 >
                   <Link href="/contact">
                     {lang === "en" ? "Request a Session" : "Solicitar sesión"}

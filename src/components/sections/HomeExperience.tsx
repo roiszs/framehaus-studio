@@ -60,12 +60,12 @@ function VisualBlock({
         className="absolute inset-0 bg-cover bg-center opacity-70"
         style={{
           backgroundImage: image
-            ? `linear-gradient(135deg, rgba(13,13,13,0.18), rgba(13,13,13,0.72)), url('${image}')`
+            ? `linear-gradient(135deg, rgba(13,13,13,0.18), rgba(13,13,13,0.60)), url('${image}')`
             : undefined,
         }}
       />
 
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(200,169,106,0.28),transparent_28%),linear-gradient(135deg,rgba(245,241,234,0.10),rgba(200,169,106,0.04),rgba(13,13,13,0.75))]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(200,169,106,0.28),transparent_28%),linear-gradient(135deg,rgba(245,241,234,0.10),rgba(200,169,106,0.04),rgba(13,13,13,0.62))]" />
 
       <div className="absolute left-5 top-5 flex items-center gap-2 rounded-full border border-[#F5F1EA]/10 bg-[#0D0D0D]/55 px-3 py-1.5 text-[10px] uppercase tracking-[0.24em] text-[#F5F1EA] backdrop-blur-xl">
         <Camera size={12} />
@@ -100,13 +100,13 @@ export default function HomeExperience() {
               </Reveal>
 
               <Reveal delay={0.08}>
-                <h1 className="max-w-5xl font-editorial text-5xl font-semibold leading-[0.88] tracking-[-0.06em] text-[#F5F1EA] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.94] tracking-[-0.055em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-7xl">
                   {dict.home.title}
                 </h1>
               </Reveal>
 
               <Reveal delay={0.16}>
-                <p className="mt-8 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+                <p className="mt-8 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                   {dict.home.subtitle}
                 </p>
               </Reveal>
@@ -115,7 +115,7 @@ export default function HomeExperience() {
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Button
                     asChild
-                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                   >
                     <Link href="/work">
                       {dict.home.primaryCta}
@@ -144,7 +144,7 @@ export default function HomeExperience() {
                       <p className="font-editorial text-3xl font-semibold text-[#F5F1EA]">
                         {item.value}
                       </p>
-                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#A7A29A]">
+                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#B9B2A8]">
                         {item.label}
                       </p>
                     </div>
@@ -172,14 +172,14 @@ export default function HomeExperience() {
                   </div>
 
                   <div className="grid grid-cols-[1fr_0.78fr] gap-4">
-                    <div className="rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 backdrop-blur-xl">
+                    <div className="rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 shadow-[0_20px_70px_rgba(0,0,0,0.16)] p-6 backdrop-blur-xl">
                       <div className="mb-5 flex size-11 items-center justify-center rounded-full bg-[#C8A96A]/15 text-[#C8A96A]">
                         <Play size={18} />
                       </div>
                       <p className="font-editorial text-3xl font-semibold leading-none tracking-[-0.04em] text-[#F5F1EA]">
                         {lang === "en" ? "Creative direction for premium visual stories." : "Dirección creativa para historias visuales premium."}
                       </p>
-                      <p className="mt-4 text-sm leading-6 text-[#A7A29A]">
+                      <p className="mt-4 text-sm leading-6 text-[#B9B2A8]">
                         {lang === "en" ? "Photography, video, campaigns, portraits, product and brand content." : "Fotografía, video, campañas, retratos, producto y contenido de marca."}
                       </p>
                     </div>
@@ -213,7 +213,7 @@ export default function HomeExperience() {
                   {dict.home.statementTitle}
                 </h2>
 
-                <p className="mt-6 max-w-3xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+                <p className="mt-6 max-w-3xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                   {dict.home.statement}
                 </p>
               </div>
@@ -249,7 +249,7 @@ export default function HomeExperience() {
                 <motion.article
                   key={service.slug}
                   variants={staggerItem}
-                  className="group overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 transition hover:-translate-y-1 hover:border-[#C8A96A]/35 hover:bg-[#F5F1EA]/[0.07]"
+                  className="group overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 shadow-[0_20px_70px_rgba(0,0,0,0.16)] shadow-[0_24px_80px_rgba(0,0,0,0.22)] transition duration-300 hover:-translate-y-1.5 hover:border-[#C8A96A]/40 hover:bg-[#F5F1EA]/[0.08]"
                 >
                   <VisualBlock
                     image={service.image}
@@ -266,7 +266,7 @@ export default function HomeExperience() {
                       {service.title[lang]}
                     </h3>
 
-                    <p className="mt-4 text-sm leading-7 text-[#A7A29A]">
+                    <p className="mt-4 text-sm leading-7 text-[#B9B2A8]">
                       {service.shortDescription[lang]}
                     </p>
 
@@ -333,7 +333,7 @@ export default function HomeExperience() {
                 <div
                   className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105"
                   style={{
-                    backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.92)), url('${item.image}')`,
+                    backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.78)), url('${item.image}')`,
                   }}
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(200,169,106,0.18),transparent_32%)]" />
@@ -345,7 +345,7 @@ export default function HomeExperience() {
                   <h3 className="font-editorial text-3xl font-semibold leading-none tracking-[-0.04em] text-[#F5F1EA]">
                     {item.title[lang]}
                   </h3>
-                  <p className="mt-3 text-sm leading-6 text-[#A7A29A]">
+                  <p className="mt-3 text-sm leading-6 text-[#B9B2A8]">
                     {item.description[lang]}
                   </p>
                 </div>
@@ -378,7 +378,7 @@ export default function HomeExperience() {
                     {featuredPackage.name[lang]}
                   </h2>
 
-                  <p className="mt-6 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+                  <p className="mt-6 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                     {featuredPackage.description[lang]}
                   </p>
 
@@ -436,14 +436,14 @@ export default function HomeExperience() {
           <div className="mt-14 grid gap-4">
             {processSteps.map((step) => (
               <Reveal key={step.step}>
-                <div className="grid gap-5 rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 md:grid-cols-[0.2fr_0.8fr_1.4fr] md:items-center">
+                <div className="grid gap-5 rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 shadow-[0_20px_70px_rgba(0,0,0,0.16)] p-6 md:grid-cols-[0.2fr_0.8fr_1.4fr] md:items-center">
                   <p className="font-editorial text-5xl font-semibold text-[#C8A96A]">
                     {step.step}
                   </p>
                   <h3 className="font-editorial text-3xl font-semibold tracking-[-0.04em] text-[#F5F1EA]">
                     {step.title[lang]}
                   </h3>
-                  <p className="text-sm leading-7 text-[#A7A29A]">
+                  <p className="text-sm leading-7 text-[#B9B2A8]">
                     {step.description[lang]}
                   </p>
                 </div>
@@ -493,7 +493,7 @@ export default function HomeExperience() {
                   {item.name[lang]}
                 </h3>
 
-                <p className="mt-4 text-sm leading-7 text-[#A7A29A]">
+                <p className="mt-4 text-sm leading-7 text-[#B9B2A8]">
                   {item.description[lang]}
                 </p>
 
@@ -539,7 +539,7 @@ export default function HomeExperience() {
               <div className="mt-10 grid gap-4">
                 {testimonials.map((item) => (
                   <Reveal key={item.name}>
-                    <div className="rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6">
+                    <div className="rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 shadow-[0_20px_70px_rgba(0,0,0,0.16)] p-6">
                       <Quote className="mb-5 text-[#C8A96A]" size={24} />
                       <p className="font-editorial text-2xl leading-tight tracking-[-0.03em] text-[#F5F1EA]">
                         “{item.quote[lang]}”
@@ -547,7 +547,7 @@ export default function HomeExperience() {
                       <p className="mt-5 text-sm font-medium text-[#F5F1EA]">
                         {item.name}
                       </p>
-                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#A7A29A]">
+                      <p className="mt-1 text-xs uppercase tracking-[0.2em] text-[#B9B2A8]">
                         {item.role[lang]}
                       </p>
                     </div>
@@ -572,7 +572,7 @@ export default function HomeExperience() {
                       <AccordionTrigger className="text-left text-base text-[#F5F1EA] hover:text-[#C8A96A] hover:no-underline">
                         {item.question[lang]}
                       </AccordionTrigger>
-                      <AccordionContent className="text-sm leading-7 text-[#A7A29A]">
+                      <AccordionContent className="text-sm leading-7 text-[#B9B2A8]">
                         {item.answer[lang]}
                       </AccordionContent>
                     </AccordionItem>
@@ -594,13 +594,13 @@ export default function HomeExperience() {
                 {lang === "en" ? "Start a project" : "Iniciar proyecto"}
               </p>
 
-              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-6xl lg:text-7xl">
+              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-5xl lg:text-6xl">
                 {lang === "en"
                   ? "Ready to build a stronger visual presence?"
                   : "¿Listo para construir una presencia visual más fuerte?"}
               </h2>
 
-              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                 {lang === "en"
                   ? "Request a session and tell FrameHaus what you want to create."
                   : "Solicita una sesión y cuéntale a FrameHaus qué quieres crear."}
@@ -609,7 +609,7 @@ export default function HomeExperience() {
               <div className="mt-10 flex justify-center">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                 >
                   <Link href="/contact">
                     {dict.nav.cta}

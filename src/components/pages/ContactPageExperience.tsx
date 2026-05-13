@@ -36,7 +36,7 @@ export default function ContactPageExperience() {
   const [submitted, setSubmitted] = useState(false);
 
   const fieldClass =
-    "border-[#F5F1EA]/10 bg-[#0D0D0D]/60 text-[#F5F1EA] placeholder:text-[#A7A29A]/60 focus-visible:ring-[#C8A96A]/60";
+    "border-[#F5F1EA]/10 bg-[#0D0D0D]/60 text-[#F5F1EA] placeholder:text-[#B9B2A8]/60 focus-visible:ring-[#C8A96A]/60";
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -46,7 +46,7 @@ export default function ContactPageExperience() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-20 sm:py-28 lg:py-32">
+      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(200,169,106,0.18),transparent_32%),radial-gradient(circle_at_82%_10%,rgba(245,241,234,0.08),transparent_30%),linear-gradient(135deg,#0D0D0D,#120F0D,#0D0D0D)]" />
 
         <Container className="relative z-10">
@@ -57,13 +57,13 @@ export default function ContactPageExperience() {
                   {lang === "en" ? "Request a Session" : "Solicitar sesión"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-5xl font-semibold leading-[0.88] tracking-[-0.06em] text-[#F5F1EA] sm:text-6xl md:text-7xl lg:text-8xl">
+                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "Tell us what you want to create."
                     : "Cuéntanos qué quieres crear."}
                 </h1>
 
-                <p className="mt-8 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+                <p className="mt-8 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                   {lang === "en"
                     ? "Share the project details, session type, timeline, and visual needs. FrameHaus will use this information to recommend the right service, package, or custom production plan."
                     : "Comparte los detalles del proyecto, tipo de sesión, tiempos y necesidades visuales. FrameHaus usará esta información para recomendar el servicio, paquete o plan de producción adecuado."}
@@ -108,7 +108,7 @@ export default function ContactPageExperience() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.9)), url('/framehaus/content-day.svg')",
+                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.76)), url('/framehaus/content-day.svg')",
                   }}
                 />
 
@@ -125,7 +125,7 @@ export default function ContactPageExperience() {
                       : "Un flujo guiado de solicitud para proyectos creativos reales."}
                   </h2>
 
-                  <p className="mt-5 text-sm leading-7 text-[#A7A29A]">
+                  <p className="mt-5 text-sm leading-7 text-[#B9B2A8]">
                     {lang === "en"
                       ? "Built to capture enough context before the first conversation."
                       : "Construido para capturar suficiente contexto antes de la primera conversación."}
@@ -155,7 +155,7 @@ export default function ContactPageExperience() {
                         : "Solicitud recibida."}
                     </h2>
 
-                    <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#A7A29A]">
+                    <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-[#B9B2A8]">
                       {lang === "en"
                         ? "This is a portfolio simulation. In a production website, this form could connect to email, CRM, WhatsApp, or a booking workflow."
                         : "Esta es una simulación de portafolio. En un website de producción, este formulario podría conectarse a email, CRM, WhatsApp o un flujo de reservas."}
@@ -435,7 +435,7 @@ export default function ContactPageExperience() {
                         <p className="font-editorial text-3xl font-semibold text-[#C8A96A]">
                           {item.step}
                         </p>
-                        <p className="pt-1 text-sm leading-7 text-[#A7A29A]">
+                        <p className="pt-1 text-sm leading-7 text-[#B9B2A8]">
                           {item[lang]}
                         </p>
                       </div>
@@ -498,7 +498,7 @@ export default function ContactPageExperience() {
                       : "Este flujo está construido como un sistema real de captación de prospectos."}
                   </h3>
 
-                  <p className="mt-5 text-sm leading-7 text-[#A7A29A]">
+                  <p className="mt-5 text-sm leading-7 text-[#B9B2A8]">
                     {lang === "en"
                       ? "For a production client, this form could send data to email, WhatsApp, a CRM, Google Sheets, or a custom dashboard."
                       : "Para un cliente en producción, este formulario podría enviar datos a email, WhatsApp, CRM, Google Sheets o un dashboard personalizado."}
@@ -521,7 +521,7 @@ export default function ContactPageExperience() {
                 {lang === "en" ? "Not ready yet?" : "¿Aún no estás listo?"}
               </p>
 
-              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-6xl lg:text-7xl">
+              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-5xl lg:text-6xl">
                 {lang === "en"
                   ? "Explore the services before requesting a session."
                   : "Explora los servicios antes de solicitar una sesión."}
@@ -530,7 +530,7 @@ export default function ContactPageExperience() {
               <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                 >
                   <Link href="/services">
                     {lang === "en" ? "View services" : "Ver servicios"}

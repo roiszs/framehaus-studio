@@ -33,10 +33,10 @@ export default function Navbar() {
             </div>
 
             <div className="min-w-0 leading-none">
-              <p className="font-editorial text-2xl font-semibold tracking-[-0.04em] text-[#F5F1EA] sm:text-3xl">
+              <p className="font-editorial text-2xl font-semibold tracking-[-0.055em] text-[#F5F1EA] sm:text-3xl">
                 FrameHaus
               </p>
-              <p className="mt-1 text-[9px] uppercase tracking-[0.3em] text-[#A7A29A] sm:text-[10px]">
+              <p className="mt-1 text-[9px] uppercase tracking-[0.3em] text-[#B9B2A8] sm:text-[10px]">
                 Studio
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function Navbar() {
                     "relative text-sm font-medium transition",
                     active
                       ? "text-[#F5F1EA]"
-                      : "text-[#A7A29A] hover:text-[#F5F1EA]"
+                      : "text-[#B9B2A8] hover:text-[#F5F1EA]"
                   )}
                 >
                   {item.label[lang]}
@@ -102,7 +102,7 @@ export default function Navbar() {
                     <p className="font-editorial text-3xl font-semibold tracking-[-0.04em]">
                       FrameHaus
                     </p>
-                    <p className="mt-2 text-sm leading-6 text-[#A7A29A]">
+                    <p className="mt-2 text-sm leading-6 text-[#B9B2A8]">
                       {lang === "en"
                         ? "Premium photography and video studio."
                         : "Estudio premium de fotografía y video."}

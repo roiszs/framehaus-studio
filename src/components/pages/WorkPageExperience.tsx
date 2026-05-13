@@ -18,7 +18,7 @@ export default function WorkPageExperience() {
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-20 sm:py-28 lg:py-32">
+      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(200,169,106,0.18),transparent_32%),radial-gradient(circle_at_82%_10%,rgba(245,241,234,0.08),transparent_30%),linear-gradient(135deg,#0D0D0D,#120F0D,#0D0D0D)]" />
 
         <Container className="relative z-10">
@@ -29,13 +29,13 @@ export default function WorkPageExperience() {
                   {lang === "en" ? "Portfolio" : "Portafolio"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-5xl font-semibold leading-[0.88] tracking-[-0.06em] text-[#F5F1EA] sm:text-6xl md:text-7xl lg:text-8xl">
+                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "A visual archive built to feel editorial, commercial, and real."
                     : "Un archivo visual construido para sentirse editorial, comercial y real."}
                 </h1>
 
-                <p className="mt-8 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+                <p className="mt-8 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                   {lang === "en"
                     ? "FrameHaus presents work across branding, product, events, portraits, and lifestyle sessions. The goal is to show range, style, and commercial value."
                     : "FrameHaus presenta trabajo en branding, producto, eventos, retratos y sesiones lifestyle. El objetivo es mostrar variedad, estilo y valor comercial."}
@@ -44,7 +44,7 @@ export default function WorkPageExperience() {
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Button
                     asChild
-                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                   >
                     <Link href="/contact">
                       {lang === "en" ? "Request a Session" : "Solicitar sesión"}
@@ -76,7 +76,7 @@ export default function WorkPageExperience() {
                     <div
                       className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105"
                       style={{
-                        backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.12),rgba(13,13,13,0.9)), url('${item.image}')`,
+                        backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.12),rgba(13,13,13,0.76)), url('${item.image}')`,
                       }}
                     />
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(200,169,106,0.22),transparent_32%)]" />
@@ -129,7 +129,7 @@ export default function WorkPageExperience() {
                 <div
                   className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105"
                   style={{
-                    backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.08),rgba(13,13,13,0.92)), url('${item.image}')`,
+                    backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.08),rgba(13,13,13,0.78)), url('${item.image}')`,
                   }}
                 />
 
@@ -145,7 +145,7 @@ export default function WorkPageExperience() {
                     {item.title[lang]}
                   </h2>
 
-                  <p className="mt-4 max-w-xl text-sm leading-7 text-[#A7A29A]">
+                  <p className="mt-4 max-w-xl text-sm leading-7 text-[#B9B2A8]">
                     {item.description[lang]}
                   </p>
 
@@ -177,7 +177,7 @@ export default function WorkPageExperience() {
                         key={item.slug}
                         className="rounded-[1.5rem] bg-cover bg-center"
                         style={{
-                          backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.15),rgba(13,13,13,0.72)), url('${item.image}')`,
+                          backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.15),rgba(13,13,13,0.60)), url('${item.image}')`,
                         }}
                       />
                     ))}
@@ -275,7 +275,7 @@ export default function WorkPageExperience() {
               <Reveal key={service.slug}>
                 <Link
                   href={service.href}
-                  className="group flex min-h-48 flex-col justify-between rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 transition hover:-translate-y-1 hover:border-[#C8A96A]/35"
+                  className="group flex min-h-48 flex-col justify-between rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 shadow-[0_20px_70px_rgba(0,0,0,0.16)] transition hover:-translate-y-1.5 hover:border-[#C8A96A]/40"
                 >
                   <div>
                     <p className="text-xs uppercase tracking-[0.3em] text-[#C8A96A]">
@@ -307,13 +307,13 @@ export default function WorkPageExperience() {
                 {lang === "en" ? "Inspired by the work?" : "¿Te inspiró el trabajo?"}
               </p>
 
-              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-6xl lg:text-7xl">
+              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-5xl lg:text-6xl">
                 {lang === "en"
                   ? "Let’s create a visual system for your next project."
                   : "Construyamos un sistema visual para tu próximo proyecto."}
               </h2>
 
-              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                 {lang === "en"
                   ? "Request a session and tell FrameHaus what kind of images, video, or campaign assets you need."
                   : "Solicita una sesión y cuéntale a FrameHaus qué tipo de imágenes, video o assets de campaña necesitas."}
@@ -322,7 +322,7 @@ export default function WorkPageExperience() {
               <div className="mt-10 flex justify-center">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                 >
                   <Link href="/contact">
                     {lang === "en" ? "Request a Session" : "Solicitar sesión"}

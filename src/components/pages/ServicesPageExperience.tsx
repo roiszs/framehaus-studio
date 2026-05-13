@@ -44,7 +44,7 @@ function ServiceVisual({
       <div
         className="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-105"
         style={{
-          backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.12),rgba(13,13,13,0.86)), url('${image}')`,
+          backgroundImage: `linear-gradient(180deg,rgba(13,13,13,0.12),rgba(13,13,13,0.60)), url('${image}')`,
         }}
       />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_15%,rgba(200,169,106,0.22),transparent_32%)]" />
@@ -61,7 +61,7 @@ export default function ServicesPageExperience() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-20 sm:py-28 lg:py-32">
+      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(200,169,106,0.18),transparent_32%),radial-gradient(circle_at_82%_10%,rgba(245,241,234,0.08),transparent_30%),linear-gradient(135deg,#0D0D0D,#120F0D,#0D0D0D)]" />
 
         <Container className="relative z-10">
@@ -72,13 +72,13 @@ export default function ServicesPageExperience() {
                   {lang === "en" ? "Services" : "Servicios"}
                 </p>
 
-                <h1 className="max-w-5xl font-editorial text-5xl font-semibold leading-[0.88] tracking-[-0.06em] text-[#F5F1EA] sm:text-6xl md:text-7xl lg:text-8xl">
+                <h1 className="max-w-5xl font-editorial text-4xl font-semibold leading-[0.98] tracking-[-0.052em] text-[#F5F1EA] sm:text-5xl md:text-6xl lg:text-6xl">
                   {lang === "en"
                     ? "Photography and video services built around visual strategy."
                     : "Servicios de fotografía y video construidos alrededor de estrategia visual."}
                 </h1>
 
-                <p className="mt-8 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+                <p className="mt-8 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                   {lang === "en"
                     ? "FrameHaus is designed like a real creative studio: each service has a clear purpose, visual direction, commercial value, and a path toward booking."
                     : "FrameHaus está diseñado como un estudio creativo real: cada servicio tiene un propósito claro, dirección visual, valor comercial y un camino hacia la reserva."}
@@ -87,7 +87,7 @@ export default function ServicesPageExperience() {
                 <div className="mt-10 flex flex-col gap-4 sm:flex-row">
                   <Button
                     asChild
-                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                    className="h-12 rounded-full bg-[#F5F1EA] px-6 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                   >
                     <Link href="/contact">
                       {lang === "en" ? "Request a Session" : "Solicitar sesión"}
@@ -118,7 +118,7 @@ export default function ServicesPageExperience() {
                     <p className="text-[10px] uppercase tracking-[0.25em] text-[#C8A96A]">
                       {service.title[lang]}
                     </p>
-                    <p className="mt-4 text-sm leading-7 text-[#A7A29A]">
+                    <p className="mt-4 text-sm leading-7 text-[#B9B2A8]">
                       {service.shortDescription[lang]}
                     </p>
                   </div>
@@ -156,7 +156,7 @@ export default function ServicesPageExperience() {
                 <motion.article
                   key={service.slug}
                   variants={staggerItem}
-                  className="group overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 transition hover:-translate-y-1 hover:border-[#C8A96A]/35 hover:bg-[#F5F1EA]/[0.07]"
+                  className="group overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 shadow-[0_20px_70px_rgba(0,0,0,0.16)] transition duration-300 hover:-translate-y-1.5 hover:border-[#C8A96A]/40 hover:bg-[#F5F1EA]/[0.07]"
                 >
                   <ServiceVisual image={service.image} label={service.title[lang]} />
 
@@ -169,7 +169,7 @@ export default function ServicesPageExperience() {
                       {service.title[lang]}
                     </h2>
 
-                    <p className="mt-4 text-sm leading-7 text-[#A7A29A]">
+                    <p className="mt-4 text-sm leading-7 text-[#B9B2A8]">
                       {service.description[lang]}
                     </p>
 
@@ -210,7 +210,7 @@ export default function ServicesPageExperience() {
                   className="absolute inset-0 bg-cover bg-center"
                   style={{
                     backgroundImage:
-                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.88)), url('/framehaus/content-day.svg')",
+                      "linear-gradient(180deg,rgba(13,13,13,0.1),rgba(13,13,13,0.74)), url('/framehaus/content-day.svg')",
                   }}
                 />
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(200,169,106,0.26),transparent_35%)]" />
@@ -299,14 +299,14 @@ export default function ServicesPageExperience() {
           <div className="mt-14 grid gap-4">
             {processSteps.map((step) => (
               <Reveal key={step.step}>
-                <div className="grid gap-5 rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 md:grid-cols-[0.2fr_0.8fr_1.4fr] md:items-center">
+                <div className="grid gap-5 rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#F5F1EA]/5 p-6 shadow-[0_20px_70px_rgba(0,0,0,0.16)] md:grid-cols-[0.2fr_0.8fr_1.4fr] md:items-center">
                   <p className="font-editorial text-5xl font-semibold text-[#C8A96A]">
                     {step.step}
                   </p>
                   <h3 className="font-editorial text-3xl font-semibold tracking-[-0.04em] text-[#F5F1EA]">
                     {step.title[lang]}
                   </h3>
-                  <p className="text-sm leading-7 text-[#A7A29A]">
+                  <p className="text-sm leading-7 text-[#B9B2A8]">
                     {step.description[lang]}
                   </p>
                 </div>
@@ -326,13 +326,13 @@ export default function ServicesPageExperience() {
                 {lang === "en" ? "Ready to book?" : "¿Listo para reservar?"}
               </p>
 
-              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-6xl lg:text-7xl">
+              <h2 className="mt-6 font-editorial text-5xl font-semibold leading-[0.9] tracking-[-0.05em] text-[#F5F1EA] sm:text-5xl lg:text-6xl">
                 {lang === "en"
                   ? "Choose the service that fits your next visual project."
                   : "Elige el servicio que encaja con tu próximo proyecto visual."}
               </h2>
 
-              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#A7A29A] sm:text-lg">
+              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#B9B2A8] sm:text-lg">
                 {lang === "en"
                   ? "FrameHaus turns creative direction, production, and delivery into a clear client experience."
                   : "FrameHaus convierte la dirección creativa, producción y entrega en una experiencia clara para el cliente."}
@@ -341,7 +341,7 @@ export default function ServicesPageExperience() {
               <div className="mt-10 flex justify-center">
                 <Button
                   asChild
-                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] hover:bg-[#C8A96A]"
+                  className="h-12 rounded-full bg-[#F5F1EA] px-7 text-[#0D0D0D] shadow-[0_18px_50px_rgba(245,241,234,0.10)] hover:bg-[#C8A96A]"
                 >
                   <Link href="/contact">
                     {lang === "en" ? "Request a Session" : "Solicitar sesión"}
