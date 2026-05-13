@@ -198,10 +198,10 @@ export default function HomeExperience() {
       </section>
 
       {/* BRAND STATEMENT */}
-      <section className="border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-12 sm:py-16 lg:py-20">
         <Container>
           <Reveal>
-            <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
               <div>
                 <p className="text-xs font-medium uppercase tracking-[0.35em] text-[#C8A96A]">
                   {dict.home.statementEyebrow}
@@ -223,7 +223,7 @@ export default function HomeExperience() {
       </section>
 
       {/* SERVICES */}
-      <section className="bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <Reveal>
             <SectionHeader
@@ -286,7 +286,7 @@ export default function HomeExperience() {
       </section>
 
       {/* PORTFOLIO */}
-      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-16 sm:py-24 lg:py-28">
+      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <Reveal>
@@ -324,10 +324,12 @@ export default function HomeExperience() {
               <motion.article
                 key={item.slug}
                 variants={staggerItem}
-                className={`group relative min-h-80 overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#181410] ${
-                  index === 0 || index === 2
+                className={`group relative min-h-[300px] overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#181410] ${
+                  index === 0 || index === 2 || index === 3
                     ? "lg:col-span-2"
-                    : "lg:col-span-1"
+                    : index === 4
+                      ? "lg:col-span-3"
+                      : "lg:col-span-1"
                 }`}
               >
                 <div
@@ -356,7 +358,7 @@ export default function HomeExperience() {
       </section>
 
       {/* FEATURED PACKAGE */}
-      <section className="bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-stretch">
             <Reveal>
@@ -415,7 +417,7 @@ export default function HomeExperience() {
       </section>
 
       {/* PROCESS */}
-      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-16 sm:py-24 lg:py-28">
+      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <Reveal>
             <SectionHeader
@@ -454,7 +456,7 @@ export default function HomeExperience() {
       </section>
 
       {/* PACKAGES PREVIEW */}
-      <section className="bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <Reveal>
             <SectionHeader
@@ -516,9 +518,9 @@ export default function HomeExperience() {
       </section>
 
       {/* TESTIMONIALS + FAQ */}
-      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-16 sm:py-24 lg:py-28">
+      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-14 sm:py-20 lg:py-24">
         <Container>
-          <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="grid gap-8 xl:grid-cols-[0.95fr_1.05fr]">
             <div>
               <Reveal>
                 <SectionHeader
@@ -585,7 +587,7 @@ export default function HomeExperience() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative overflow-hidden bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="relative overflow-hidden bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(200,169,106,0.18),transparent_35%)]" />
         <Container className="relative z-10">
           <Reveal>

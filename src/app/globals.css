@@ -249,3 +249,22 @@ a {
     line-height: 1;
   }
 }
+
+/* FRAMEHAUS BUTTON HOVER FIX */
+a[class~="bg-[#F5F1EA]"],
+button[class~="bg-[#F5F1EA]"] {
+  background: #f5f1ea !important;
+  color: #0d0d0d !important;
+  border-color: #f5f1ea !important;
+}
+
+a[class~="bg-[#F5F1EA]"]:hover,
+button[class~="bg-[#F5F1EA]"]:hover,
+a[class~="bg-[#F5F1EA]"]:focus-visible,
+button[class~="bg-[#F5F1EA]"]:focus-visible,
+a[class~="bg-[#F5F1EA]"]:active,
+button[class~="bg-[#F5F1EA]"]:active {
+  background: #c8a96a !important;
+  color: #0d0d0d !important;
+  border-color: #c8a96a !important;
+}

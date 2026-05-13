@@ -46,7 +46,7 @@ export default function ContactPageExperience() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_20%,rgba(200,169,106,0.18),transparent_32%),radial-gradient(circle_at_82%_10%,rgba(245,241,234,0.08),transparent_30%),linear-gradient(135deg,#0D0D0D,#120F0D,#0D0D0D)]" />
 
         <Container className="relative z-10">
@@ -138,7 +138,7 @@ export default function ContactPageExperience() {
       </section>
 
       {/* FORM */}
-      <section className="bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr]">
             <Reveal>
@@ -511,7 +511,7 @@ export default function ContactPageExperience() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative overflow-hidden border-t border-[#F5F1EA]/10 bg-[#120F0D] py-16 sm:py-24 lg:py-28">
+      <section className="relative overflow-hidden border-t border-[#F5F1EA]/10 bg-[#120F0D] py-14 sm:py-20 lg:py-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(200,169,106,0.18),transparent_35%)]" />
 
         <Container className="relative z-10">

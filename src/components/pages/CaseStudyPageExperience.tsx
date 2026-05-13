@@ -118,7 +118,7 @@ export default function CaseStudyPageExperience() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="relative overflow-hidden border-b border-[#F5F1EA]/10 bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(200,169,106,0.18),transparent_32%),radial-gradient(circle_at_80%_15%,rgba(245,241,234,0.08),transparent_30%),linear-gradient(135deg,#0D0D0D,#120F0D,#0D0D0D)]" />
 
         <Container className="relative z-10">
@@ -196,7 +196,7 @@ export default function CaseStudyPageExperience() {
       </section>
 
       {/* METRICS */}
-      <section className="bg-[#0D0D0D] py-16 sm:py-20">
+      <section className="bg-[#0D0D0D] py-12 sm:py-16">
         <Container>
           <StaggerContainer className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {metrics.map((item) => (
@@ -218,7 +218,7 @@ export default function CaseStudyPageExperience() {
       </section>
 
       {/* PROJECT OVERVIEW */}
-      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-16 sm:py-24 lg:py-28">
+      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
             <Reveal>
@@ -290,7 +290,7 @@ export default function CaseStudyPageExperience() {
       </section>
 
       {/* HIGHLIGHTS */}
-      <section className="bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <Reveal>
             <SectionHeader
@@ -337,7 +337,7 @@ export default function CaseStudyPageExperience() {
       </section>
 
       {/* SCOPE */}
-      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-16 sm:py-24 lg:py-28">
+      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <Reveal>
@@ -407,7 +407,7 @@ export default function CaseStudyPageExperience() {
       </section>
 
       {/* STACK */}
-      <section className="bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <Reveal>
@@ -449,7 +449,7 @@ export default function CaseStudyPageExperience() {
       </section>
 
       {/* PORTFOLIO COPY */}
-      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-16 sm:py-24 lg:py-28">
+      <section className="border-y border-[#F5F1EA]/10 bg-[#120F0D] py-14 sm:py-20 lg:py-24">
         <Container>
           <Reveal>
             <SectionHeader
@@ -482,7 +482,7 @@ export default function CaseStudyPageExperience() {
       </section>
 
       {/* CTA */}
-      <section className="relative overflow-hidden bg-[#0D0D0D] py-16 sm:py-24 lg:py-28">
+      <section className="relative overflow-hidden bg-[#0D0D0D] py-14 sm:py-20 lg:py-24">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(200,169,106,0.18),transparent_35%)]" />
 
         <Container className="relative z-10">
