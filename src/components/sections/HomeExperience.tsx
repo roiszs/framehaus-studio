@@ -95,20 +95,20 @@ function HeroEditorialCard({
 }) {
   return (
     <div
-      className={`relative overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#181410] p-7 shadow-[0_24px_80px_rgba(0,0,0,0.22)] ${className}`}
+      className={`relative overflow-hidden rounded-[1.75rem] border border-[#F5F1EA]/10 bg-[#181410] p-5 shadow-[0_24px_80px_rgba(0,0,0,0.22)] sm:p-6 ${className}`}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(200,169,106,0.22),transparent_35%),linear-gradient(135deg,rgba(245,241,234,0.06),transparent_45%)]" />
-      <div className="absolute -right-16 -top-16 size-56 rounded-full border border-[#C8A96A]/15 bg-[#C8A96A]/5" />
-      <div className="absolute -bottom-20 -left-20 size-64 rounded-full border border-[#F5F1EA]/10 bg-[#F5F1EA]/5" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(200,169,106,0.22),transparent_34%),linear-gradient(135deg,rgba(245,241,234,0.06),transparent_48%)]" />
+      <div className="absolute -right-16 -top-16 size-52 rounded-full border border-[#C8A96A]/15 bg-[#C8A96A]/5" />
+      <div className="absolute -bottom-20 -left-20 size-60 rounded-full border border-[#F5F1EA]/10 bg-[#F5F1EA]/5" />
 
-      <div className="relative z-10 flex h-full flex-col justify-between">
+      <div className="relative z-10 flex h-full flex-col justify-between gap-6">
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-center gap-2 rounded-full border border-[#F5F1EA]/10 bg-[#0D0D0D]/70 px-3 py-1.5 text-[10px] uppercase tracking-[0.24em] text-[#F5F1EA] backdrop-blur-xl">
             <Camera size={12} />
             {label}
           </div>
 
-          <div className="flex size-11 items-center justify-center rounded-full border border-[#C8A96A]/25 bg-[#C8A96A]/10 text-[#C8A96A]">
+          <div className="flex size-10 shrink-0 items-center justify-center rounded-full border border-[#C8A96A]/25 bg-[#C8A96A]/10 text-[#C8A96A]">
             {variant === "brand" ? (
               <svg viewBox="0 0 24 24" className="size-5" fill="none" aria-hidden="true">
                 <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" stroke="currentColor" strokeWidth="1.8" />
@@ -123,16 +123,16 @@ function HeroEditorialCard({
           </div>
         </div>
 
-        <div className="relative z-10">
-          <p className="mb-4 text-xs uppercase tracking-[0.32em] text-[#C8A96A]">
+        <div>
+          <p className="mb-3 text-[10px] uppercase tracking-[0.32em] text-[#C8A96A]">
             FrameHaus
           </p>
 
-          <h3 className="max-w-xs font-editorial text-3xl font-semibold leading-[0.95] tracking-[-0.052em] text-[#F5F1EA] sm:text-4xl">
+          <h3 className="max-w-xs font-editorial text-2xl font-semibold leading-[1] tracking-[-0.052em] text-[#F5F1EA] sm:text-3xl">
             {title}
           </h3>
 
-          <p className="mt-4 max-w-sm text-sm leading-6 text-[#B9B2A8]">
+          <p className="mt-3 max-w-sm text-sm leading-6 text-[#B9B2A8]">
             {description}
           </p>
         </div>
@@ -140,7 +140,6 @@ function HeroEditorialCard({
     </div>
   );
 }
-
 
 export default function HomeExperience() {
   const { lang, dict } = useLang();
@@ -244,7 +243,7 @@ export default function HomeExperience() {
                           : "Assets comerciales para ecommerce, campañas y lanzamientos premium."
                       }
                       variant="product"
-                      className="h-56"
+                      className="h-64"
                     />
                   </div>
 
@@ -270,7 +269,7 @@ export default function HomeExperience() {
                           : "Assets comerciales para ecommerce, campañas y lanzamientos premium."
                       }
                       variant="product"
-                      className="h-56"
+                      className="h-64"
                     />
                   </div>
                 </div>
